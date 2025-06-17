@@ -23,13 +23,13 @@ function App() {
           items={[
             "United States",
             "Brazil",
-            "India",
+            "Bangladesh",
             "China",
             "Russia",
             "Australia",
             "Japan",
             "Canada",
-            "France",
+            "United Kingdom",
             "Germany",
           ]}
           // When spinning finishes, toggle celebration and show alert
