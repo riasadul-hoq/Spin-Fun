@@ -35,7 +35,7 @@ function App() {
           // When spinning finishes, toggle celebration and show alert
           onFinishSpin={(item) => {
             handleCelebrate();
-            alert(`You love ${item}`);
+            alert(`You love ${item} 🎉`);
           }}
         />
       </div>
