@@ -2,6 +2,9 @@
 
 A simple React app featuring a spinning wheel of countries and a confetti celebration effect. Built with [react-spin-wheel](https://www.npmjs.com/package/react-spin-wheel), [react-confetti](https://www.npmjs.com/package/react-confetti), and styled using [Tailwind CSS](https://tailwindcss.com/).
 
+**Live Demo:**  
+👉 [https://riasadul-hoq.github.io/Spin-Fun/](https://riasadul-hoq.github.io/Spin-Fun/)
+
 ## Features
 
 - 🎡 Spin a wheel to randomly select a country.
@@ -36,8 +39,6 @@ A simple React app featuring a spinning wheel of countries and a confetti celebr
    yarn start
    ```
 
-
-
 ## Usage
 
 - Click the "Spin" button to spin the wheel.
@@ -46,8 +47,8 @@ A simple React app featuring a spinning wheel of countries and a confetti celebr
 
 ## Customization
 
-- To add or remove countries, modify the `countries` array in the `src/data.js` file.
-- To change the appearance, update the styles in the `src/App.css` file or customize Tailwind CSS settings.
+- To add or remove countries, modify the `items` array in the `SpinWheel` component inside `src/App.jsx`.
+- To change the appearance, update the styles in the `src/index.css` file or customize Tailwind CSS settings.
 
 ## Contributing
 
