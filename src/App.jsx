@@ -17,25 +17,41 @@ function App() {
   return (
     // Center content vertically and horizontally with Tailwind CSS
     <div className="flex flex-col items-center justify-center h-screen gap-6">
+      <div className="text-center">
+        <h1 className="text-4xl  text-red-600 font-bold mb-4">
+          Congrats Aarham
+        </h1>
+        <h1 className="text-4xl font-semibold mb-4">Spin Your Prize</h1>
+      </div>
       <div>
         {/* SpinWheel component with country items */}
         <SpinWheel
+          // items={[
+          //   "United States",
+          //   "Brazil",
+          //   "Bangladesh",
+          //   "China",
+          //   "Russia",
+          //   "Australia",
+          //   "Japan",
+          //   "Canada",
+          //   "United Kingdom",
+          //   "Germany",
+          // ]}
           items={[
-            "United States",
-            "Brazil",
-            "Bangladesh",
-            "China",
-            "Russia",
-            "Australia",
-            "Japan",
-            "Canada",
-            "United Kingdom",
-            "Germany",
+            "Shake Shack",
+            "Chuck E Cheese",
+            "Trainer",
+            "Clothes",
+            "Chess Board",
+            "3 Hours TV",
+            "3 Hours Mobile",
+            "Sudhu Dua Koro",
           ]}
           // When spinning finishes, toggle celebration and show alert
           onFinishSpin={(item) => {
             handleCelebrate();
-            alert(`You love ${item} 🎉`);
+            alert(`You deserve ${item} 🎉`);
           }}
         />
       </div>
