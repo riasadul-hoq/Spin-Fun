@@ -1,13 +1,13 @@
 # Spin Fun
 
-A simple React app featuring a spinning wheel of countries and a confetti celebration effect. Built with [react-spin-wheel](https://www.npmjs.com/package/react-spin-wheel), [react-confetti](https://www.npmjs.com/package/react-confetti), and styled using [Tailwind CSS](https://tailwindcss.com/).
+A simple React app featuring a spinning wheel of prizes and a confetti celebration effect. Built with [react-spin-wheel](https://www.npmjs.com/package/react-spin-wheel), [react-confetti](https://www.npmjs.com/package/react-confetti), and styled using [Tailwind CSS](https://tailwindcss.com/).
 
 **Live Demo:**  
 👉 [https://riasadul-hoq.github.io/Spin-Fun/](https://riasadul-hoq.github.io/Spin-Fun/)
 
 ## Features
 
-- 🎡 Spin a wheel to randomly select a country.
+- 🎡 Spin a wheel to randomly win a prize (e.g., PlayStation 5, iPad Pro, MacBook Pro, etc.).
 - 🎉 Confetti celebration effect when the wheel stops or when triggered manually.
 - 🖱️ Button to toggle celebration on and off.
 - 💅 Responsive and centered layout using Tailwind CSS.
@@ -42,12 +42,13 @@ A simple React app featuring a spinning wheel of countries and a confetti celebr
 ## Usage
 
 - Click the "Spin" button to spin the wheel.
-- Wait for the wheel to stop and reveal the selected country.
+- Wait for the wheel to stop and reveal the prize you won.
 - Enjoy the confetti animation!
+- Use the "Celebrate" button to manually toggle the confetti effect.
 
 ## Customization
 
-- To add or remove countries, modify the `items` array in the `SpinWheel` component inside `src/App.jsx`.
+- To add or remove prizes, modify the `items` array in the `SpinWheel` component inside `src/App.jsx`.
 - To change the appearance, update the styles in the `src/index.css` file or customize Tailwind CSS settings.
 
 ## Contributing

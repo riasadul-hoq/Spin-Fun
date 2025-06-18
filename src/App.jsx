@@ -6,57 +6,44 @@ import Button from "./Button/Button";
 
 // Main App component
 function App() {
-  // State to control celebration/confetti
+  // State to control celebration/confetti animation
   const [isCelebrate, setIsCelebrate] = useState(false);
 
-  // Toggle celebration state
+  // Toggles the celebration state (confetti on/off)
   const handleCelebrate = () => {
     setIsCelebrate((prev) => !prev);
   };
 
   return (
-    // Center content vertically and horizontally with Tailwind CSS
+    // Center all content vertically and horizontally using Tailwind CSS
     <div className="flex flex-col items-center justify-center h-screen gap-6">
       <div className="text-center">
-        <h1 className="text-4xl  text-red-600 font-bold mb-4">
-          Congrats Aarham
-        </h1>
-        <h1 className="text-4xl font-semibold mb-4">Spin Your Prize</h1>
+        <h1 className="text-4xl text-red-600 font-bold mb-4">Spin To Win!</h1>
       </div>
       <div>
-        {/* SpinWheel component with country items */}
+        {/* SpinWheel component with prize items */}
         <SpinWheel
-          // items={[
-          //   "United States",
-          //   "Brazil",
-          //   "Bangladesh",
-          //   "China",
-          //   "Russia",
-          //   "Australia",
-          //   "Japan",
-          //   "Canada",
-          //   "United Kingdom",
-          //   "Germany",
-          // ]}
           items={[
-            "Shake Shack",
-            "Chuck E Cheese",
-            "Trainer",
-            "Clothes",
-            "Chess Board",
-            "3 Hours TV",
-            "3 Hours Mobile",
-            "Sudhu Dua Koro",
+            "PlayStation 5",
+            "iPad Pro",
+            "Galaxy S23",
+            "Gift Card",
+            "Smart Watch",
+            "Headphones",
+            "XBOX",
+            "LCD TV",
+            "MacBook Pro",
+            "iPhone 16 Pro",
           ]}
-          // When spinning finishes, toggle celebration and show alert
+          // When spinning finishes, trigger celebration and show alert
           onFinishSpin={(item) => {
             handleCelebrate();
-            alert(`You deserve ${item} 🎉`);
+            alert(`You Win ${item} 🎉`);
           }}
         />
       </div>
       <div>
-        {/* Button to manually toggle celebration */}
+        {/* Button to manually toggle confetti celebration */}
         <Button
           onClick={handleCelebrate}
           className={`${
@@ -67,7 +54,7 @@ function App() {
         >
           {isCelebrate ? "Stop Celebrating" : "Celebrate"}
         </Button>
-        {/* Show confetti when isCelebrate is true */}
+        {/* Show confetti animation when isCelebrate is true */}
         <p>{isCelebrate && <Confetti numberOfPieces={1000} />}</p>
       </div>
     </div>
