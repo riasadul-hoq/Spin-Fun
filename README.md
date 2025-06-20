@@ -29,14 +29,14 @@ A simple React app featuring a spinning wheel of prizes and a confetti celebrati
 2. **Install dependencies:**
    ```sh
    npm install
-   # or
-   yarn install
    ```
 3. **Start the development server:**
    ```sh
-   npm start
-   # or
-   yarn start
+   npm run dev
+   ```
+4. **Build for production:**
+   ```sh
+   npm run deploy
    ```
 
 ## Usage
